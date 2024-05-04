@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(16,28,32);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            border: 2px solid rgb(172, 245, 255);
+            max-width: 500px;
+            margin: 70px auto;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgb(172, 245, 255);
+            h1{
+                color: rgb(172, 245, 255);
+                text-align: center;
+                font-size: 40px;
+            }
+            label{
+                color: rgb(172, 245, 255);
+                font-size: 20px;
+            }
+            #myInput{
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 18px;
+                border: none;
+            }
+            #myBtn{
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                font-size: 18px;
+                background-color: rgb(172, 245, 255);
+                color: rgb(16,28,32);
+                cursor: pointer;
+                font-weight: bold;margin-bottom: 10px;
+                transition: 0.1s ease;
+                border: none;
+            }
+            #myBtn:hover{
+                background-color: rgb(102, 149, 155);
+                color: rgb(16,28,32);
+            }
+            #result{
+                color: rgb(172, 245, 255);
+                font-size: 20px;
+                text-align: center;
+                width: 80%;
+                margin: 10px auto;
+                border-radius: 10px;
+                background-color: rgb(0, 49, 139);
+            }
+            #paragraph{
+                color: rgb(172, 245, 255);
+                background-color: rgb(0, 49, 139);
+                font-size: 20px;
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                border-radius: 10px;
+            }
+            #hint{
+                color: rgb(172, 245, 255);
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        @media(max-width: 430px){
+            .container{
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Palindrome checker</h1><br>
+        <label for="myInput">Enter a text:</label><br><br>
+        <input placeholder="ex: civic" id="myInput" type="text"><br><br>
+        <button id="myBtn" type="submit">Check</button>
+        <p id="result"></p>
+        <p id="paragraph">A palindrome is a word, number, phrase, or sequence that reads the same backward as forward.</p>
+        <br>
+        <p id="hint">Hint💡: you can enter numbers and words</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
